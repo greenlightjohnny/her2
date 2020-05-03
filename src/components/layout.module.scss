@@ -1,0 +1,274 @@
+body,
+html {
+  font-family: "typeface-montserrat";
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  //display: inline-block;
+  align-items: flex-start;
+  flex: 1 1 auto;
+  //flex-direction: row;
+  //flex-grow: 1;
+}
+
+.large {
+  min-height: 100vh;
+  position: relative;
+
+  font-family: "montserrat";
+
+  h3 {
+    font-family: "montserrat";
+  }
+  //align-items: stretch;
+}
+
+.header {
+  //max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  //flex: 1;
+  justify-content: space-between;
+  margin: 0 5%;
+}
+
+///////////////////////Footer///////////
+.footer {
+  text-align: center;
+  background-color: #181d22;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #f4f4f4;
+  position: absolute;
+  //bottom: 0;
+  width: 100%;
+
+  p {
+    color: hsla(0, 0%, 100%, 0.5);
+    display: inline-block;
+  }
+  img {
+    height: 28px;
+    margin-bottom: 0;
+    display: inline-block;
+    padding-left: 7px;
+  }
+}
+
+.ftop {
+  background-color: #181d22;
+}
+
+.link1 {
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.block {
+  display: inline-block;
+  float: right;
+  list-style-type: none;
+
+  li {
+    display: inline-block;
+    margin-left: 1rem;
+    font-weight: bold;
+  }
+}
+
+.hone {
+  display: inline-block;
+  margin-top: 0;
+}
+
+.sect2 {
+  background-color: #cfdeee;
+  width: 100%;
+  //height: 50vh;
+}
+
+.mid {
+  *,
+  h1 {
+    margin-top: 1rem;
+    //padding-top: 1rem;
+    //margin-left: 1rem;
+    padding-left: 0.5rem;
+  }
+}
+
+.sect1 {
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
+  margin: 0 auto;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  & div {
+    max-width: 600px;
+    flex: 1;
+    min-width: 250px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  & img {
+    margin-bottom: 2rem;
+  }
+}
+
+.flex2 {
+  max-width: 900px;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+
+  & div {
+    max-width: 600px;
+    flex: 1;
+    min-width: 250px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  & img {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.sect3 {
+  background-color: #fbfdff;
+  width: 100%;
+  //height: 50vh;
+
+  .flex3 {
+    max-width: 900px;
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+
+    & div {
+      max-width: 600px;
+      flex: 1;
+      min-width: 250px;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    & img {
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.mcon {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.button1 {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  border-radius: 50rem;
+  color: #fff;
+  background-color: #475edf;
+  border-color: #475edf;
+  width: 150px;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: bold;
+  box-shadow: 0 20px 60px -5px rgba(0, 0, 0, 0.3),
+    0 7px 36px -10px rgba(0, 0, 0, 0.33);
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 30px 80px 3px rgba(0, 0, 0, 0.3),
+      0 20px 50px -10px rgba(0, 0, 0, 0.3);
+  }
+
+  svg {
+    margin-left: 0.5rem;
+    margin-top: 3px;
+  }
+}
+
+.medphoto {
+  margin-top: 5rem;
+}
+
+.me {
+  color: #475edf;
+}
+
+///////////////////////BANNER///////
+////////////////////////////
+////////////////////////////////////////////////
+.banner {
+  background-color: #191919;
+  color: #fff;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: "montserrat";
+
+  h2 {
+    font-family: "montserrat";
+    padding-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  p {
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+////////////Posts //////////////////////@extend
+
+.sect4 {
+  background-color: #f8f9fa;
+  padding-top: 3rem;
+  .flex4 {
+    border: 1px solid red;
+    min-height: 200px;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    > div {
+      flex: 1;
+      height: 300px;
+      min-width: 250px;
+
+      //border: 2px solid blue;
+      padding-left: 15px;
+      padding-right: 15px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px,
+        rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+        rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
+      border-radius: 9px;
+      margin: 2rem 1rem;
+    }
+  }
+}

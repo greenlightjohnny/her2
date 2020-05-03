@@ -55,12 +55,15 @@ const Bio = () => {
   const [{ author, social }] = useLocalJsonForm(data.author, {
     label: "Author bio",
     fields: [
-      { name: 'rawJson.author' , label: "Author Name", component: "text" },
-      
-      { name: 'rawJson.social', label: 'Social Info', component: 'group', fields: [
-        {label: "@Twitter", name: "twitter", component: "text"}
-      ]}
-    ]
+      { name: "rawJson.author", label: "Author Name", component: "text" },
+
+      {
+        name: "rawJson.social",
+        label: "Social Info",
+        component: "group",
+        fields: [{ label: "@Twitter", name: "twitter", component: "text" }],
+      },
+    ],
   })
   // const [{ name, social }] = useGlobalJsonForm(data.author, {
   //   label: "Author",
@@ -74,7 +77,7 @@ const Bio = () => {
         marginBottom: rhythm(2.5),
       }}
     >
-     <Image
+      <Image
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
         style={{
@@ -88,12 +91,8 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in Canada
-        building useful things.
+        About intro. More more more more more more more more more more more more
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
       </p>
     </div>
   )
