@@ -25,7 +25,7 @@ class BlogPosts extends React.Component {
             {isEditing ? "Preview" : "Edit"}
           </TinaButton>
         )}
-        <div>
+        <div className={Style.leftc}>
           <h3>Latest Posts</h3>
         </div>
         <div className={Style.mcon}>
@@ -65,7 +65,7 @@ class BlogPosts extends React.Component {
   }
 }
 
-export default liveRemarkForm(BlogPosts)
+export default remarkForm(BlogPosts)
 
 export const pageQuery = graphql`
   query {

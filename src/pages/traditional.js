@@ -72,7 +72,7 @@ const BlogPostForm = {
   ],
 }
 
-export default liveRemarkForm(Landing, BlogPostForm)
+export default remarkForm(Landing, BlogPostForm)
 export const query = graphql`
   query MyQuery5 {
     site {

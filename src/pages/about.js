@@ -17,12 +17,12 @@ class Landing extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <Title title="Alternative Treatment" />
         {process.env.NODE_ENV !== "production" && (
           <TinaButton primary onClick={() => setIsEditing(p => !p)}>
             {isEditing ? "Preview" : "Edit"}
           </TinaButton>
         )}
+        <Title title="About" />
         <div className={Sect.mcon}>
           <h1>{data.markdownRemark.frontmatter.title}</h1>
           <TinaField name="rawMarkdownBody" Component={Wysiwyg}>
@@ -74,14 +74,14 @@ const BlogPostForm = {
 
 export default remarkForm(Landing, BlogPostForm)
 export const query = graphql`
-  query MyQuery6 {
+  query MyQuery11 {
     site {
       siteMetadata {
         title
       }
     }
     markdownRemark(
-      fileRelativePath: { eq: "/content/assets/pagesmd/alternative.md" }
+      fileRelativePath: { eq: "/content/assets/pagesmd/traditional.md" }
     ) {
       id
       frontmatter {
