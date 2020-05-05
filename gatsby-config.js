@@ -1,3 +1,4 @@
+const path = require("path")
 module.exports = {
   siteMetadata: {
     title: `HER2.ME`,
@@ -46,6 +47,7 @@ module.exports = {
     },
     `gatsby-transformer-json`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-lodash`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {

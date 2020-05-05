@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import { remarkForm } from "gatsby-tinacms-remark"
+import get from "lodash.get"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -84,6 +85,7 @@ class BlogPostTemplate extends React.Component {
 /**
  * This object defines the form for editing blog post.
  */
+const path = require("path").posix
 const BlogPostForm = {
   /**
    * The list of fields tell us what the form looks like.
@@ -103,6 +105,25 @@ const BlogPostForm = {
      * * group-list
      * * blocks
      */
+
+    {
+      name: "rawFrontmatter.thumbnail",
+      label: "Thumbnail",
+      component: "image",
+      previewSrc: (formValues, { input }) => {
+        const path = input.name.replace("rawFrontmatter", "frontmatter")
+        const gatsbyImageNode = get(formValues, path)
+        if (!gatsbyImageNode) return ""
+        //specific to gatsby-image
+        return gatsbyImageNode.childImageSharp.fluid.src
+      },
+
+      // upload images to same directory as content file
+      uploadDir: blogPost => path.dirname(blogPost.fileRelativePath),
+
+      // image file is sibling of content file
+      parse: filename => `./${filename}`,
+    },
     {
       //
       name: "frontmatter.title",

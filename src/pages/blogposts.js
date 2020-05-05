@@ -10,6 +10,7 @@ import { Button as TinaButton } from "@tinacms/styles"
 import { Wysiwyg } from "@tinacms/fields"
 import { TinaField } from "tinacms"
 import Style from "./blog.module.scss"
+import SciPhoto from "../../content/assets/sci.svg"
 
 class BlogPosts extends React.Component {
   render() {
@@ -26,7 +27,7 @@ class BlogPosts extends React.Component {
           </TinaButton>
         )}
         <div className={Style.leftc}>
-          <h3>Latest Posts</h3>
+          <h1>Latest Posts</h1>
         </div>
         <div className={Style.mcon}>
           <SEO title="All posts" />
@@ -35,6 +36,7 @@ class BlogPosts extends React.Component {
             const title = node.frontmatter.title || node.fields.slug
             return (
               <article className={Style.blogp} key={node.fields.slug}>
+                <img src={SciPhoto} />
                 <header>
                   <h3
                     style={
