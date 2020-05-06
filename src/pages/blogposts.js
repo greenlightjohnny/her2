@@ -33,10 +33,11 @@ class BlogPosts extends React.Component {
           <SEO title="All posts" />
           <TinaField name="rawMarkdownBody" Component={Wysiwyg}></TinaField>
           {posts.map(({ node }) => {
+            console.log(node.frontmatter.thumbnail)
             const title = node.frontmatter.title || node.fields.slug
             return (
               <article className={Style.blogp} key={node.fields.slug}>
-                <img src={SciPhoto} />
+                <img src={node.frontmatter.thumbnail} />
                 <header>
                   <h3
                     style={
@@ -91,6 +92,7 @@ export const pageQuery = graphql`
             title
             description
           }
+          rawFrontmatter
         }
       }
     }

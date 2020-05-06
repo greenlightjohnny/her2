@@ -31,6 +31,7 @@ module.exports = {
         name: `blog`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -47,7 +48,12 @@ module.exports = {
     },
     `gatsby-transformer-json`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-lodash`,
+    {
+      resolve: `gatsby-plugin-lodash`,
+      options: {
+        disabledFeatures: [`shorthands`, `cloning`],
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

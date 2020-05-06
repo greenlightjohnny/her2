@@ -85,7 +85,11 @@ class BlogPostTemplate extends React.Component {
 /**
  * This object defines the form for editing blog post.
  */
-const path = require("path").posix
+const path = require("path")
+console.log(
+  "##################################################################3"
+)
+console.log(path)
 const BlogPostForm = {
   /**
    * The list of fields tell us what the form looks like.
@@ -119,7 +123,9 @@ const BlogPostForm = {
       },
 
       // upload images to same directory as content file
-      uploadDir: blogPost => path.dirname(blogPost.fileRelativePath),
+      uploadDir: blogPost => {
+        return path.dirname(blogPost.fileRelativePath)
+      },
 
       // image file is sibling of content file
       parse: filename => `./${filename}`,
@@ -165,6 +171,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
       }
+      rawFrontmatter
     }
   }
 `
