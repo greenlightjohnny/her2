@@ -35,6 +35,10 @@ html {
 }
 
 ///////////////////////Footer///////////
+.active {
+  color: #f4f4f4;
+}
+
 .footer {
   text-align: center;
   background-color: #181d22;
@@ -54,6 +58,36 @@ html {
     margin-bottom: 0;
     display: inline-block;
     padding-left: 7px;
+  }
+
+  a:hover {
+    color: #f4f4f4;
+  }
+
+  .footerflex {
+    display: flex;
+    //border: 1px solid red;
+    max-width: 1100px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    text-align: left;
+    flex-wrap: wrap;
+    font-weight: bold;
+    color: hsla(0, 0%, 100%, 0.5);
+    margin-bottom: 3rem;
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    > * {
+      flex: 1 1 0%;
+      //border: 1px solid blue;
+      min-width: 100px;
+      margin-bottom: 1.75rem;
+    }
   }
 }
 

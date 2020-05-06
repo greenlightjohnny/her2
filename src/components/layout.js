@@ -111,6 +111,58 @@ class Layout extends React.Component {
           </svg>
         </div>
         <footer className={Sect.footer}>
+          <div className={Sect.footerflex}>
+            <div>
+              <Link activeClassName={Sect.active} className={Sect.link1} to="/">
+                HER2.ME
+              </Link>
+            </div>
+            <div>
+              <Link
+                activeClassName={Sect.active}
+                className={Sect.link1}
+                to="/Basics"
+              >
+                Basics
+              </Link>
+            </div>
+            <div>
+              <Link
+                activeClassName={Sect.active}
+                className={Sect.link1}
+                to="/traditional"
+              >
+                Traditional
+              </Link>
+            </div>
+            <div>
+              <Link
+                activeClassName={Sect.active}
+                className={Sect.link1}
+                to="/alternative"
+              >
+                Alternative
+              </Link>
+            </div>
+            <div>
+              <Link
+                activeClassName={Sect.active}
+                className={Sect.link1}
+                to="/Latest"
+              >
+                Latest
+              </Link>
+            </div>
+            <div>
+              <Link
+                activeClassName={Sect.active}
+                className={Sect.link1}
+                to="/About"
+              >
+                About
+              </Link>
+            </div>
+          </div>
           © {new Date().getFullYear()}, all rights reserved
           {` `}
           <div>
