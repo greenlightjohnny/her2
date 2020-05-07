@@ -54,7 +54,7 @@ html {
     display: inline-block;
   }
   img {
-    height: 28px;
+    height: 20px;
     margin-bottom: 0;
     display: inline-block;
     padding-left: 7px;
@@ -76,6 +76,8 @@ html {
     font-weight: bold;
     color: hsla(0, 0%, 100%, 0.5);
     margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-align: center;
 
     @media screen and (max-width: 800px) {
       flex-direction: column;
@@ -263,12 +265,13 @@ html {
 
   h2 {
     font-family: "montserrat";
-    padding-top: 2rem;
+    padding-top: 4rem;
     margin-bottom: 0;
+    margin-top: 0;
   }
 
   p {
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     margin-bottom: 0;
   }
 }
@@ -276,10 +279,23 @@ html {
 ////////////Posts //////////////////////@extend
 
 .sect4 {
-  background-color: #f8f9fa;
-  padding-top: 3rem;
+  //background-color: #f8f9fa;
+  background-color: #cfdeee;
+  padding-top: 0.5rem;
+  padding-bottom: 3rem;
+
+  .inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    h2 {
+      font-family: "montserrat";
+      margin-left: 1rem;
+      //margin-top: 0rem;
+    }
+    font-family: "montserrat";
+  }
   .flex4 {
-    border: 1px solid red;
+    //border: 1px solid red;
     min-height: 200px;
     width: 100%;
     display: flex;
@@ -295,7 +311,8 @@ html {
       flex: 1;
       height: 300px;
       min-width: 250px;
-
+      background-color: #fbfdff;
+      max-width: 400px;
       //border: 2px solid blue;
       padding-left: 15px;
       padding-right: 15px;

@@ -146,6 +146,9 @@ class Landing extends React.Component {
           </div>
 
           <div className={Sect.sect4}>
+            <div className={Sect.inner}>
+              <h2>Latest Posts:</h2>
+            </div>
             <div className={Sect.flex4}>
               <div>One</div>
               <div>Two</div>
