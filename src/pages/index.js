@@ -147,7 +147,24 @@ class Landing extends React.Component {
 
           <div className={Sect.sect4}>
             <div className={Sect.inner}>
-              <h2>Latest Posts:</h2>
+              <h1>Latest Posts:</h1>
+              <Link className={Sect.button1} to="/alternative">
+                See All{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 20 19"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </Link>
             </div>
             <div className={Sect.flex4}>
               <div>One</div>

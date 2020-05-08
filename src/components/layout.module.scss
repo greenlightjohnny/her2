@@ -287,10 +287,14 @@ html {
   .inner {
     max-width: 1300px;
     margin: 0 auto;
-    h2 {
+    h1 {
       font-family: "montserrat";
       margin-left: 1rem;
       //margin-top: 0rem;
+    }
+    a {
+      margin-left: 1rem;
+      margin-bottom: 1rem;
     }
     font-family: "montserrat";
   }
@@ -306,6 +310,7 @@ html {
     margin: 0 auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    justify-content: center;
 
     > div {
       flex: 1;
@@ -321,6 +326,13 @@ html {
         rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
       border-radius: 9px;
       margin: 2rem 1rem;
+      transition: ease-in-out all 0.3s;
+
+      &:hover {
+        transition: ease-in-out 0.3s all;
+        box-shadow: rgba(0, 0, 0, 0.24) -1px 2px 24px 0px;
+        transform: scale(1.1);
+      }
     }
   }
 }
