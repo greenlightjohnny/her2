@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, Img } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -89,7 +89,7 @@ const path = require("path")
 console.log(
   "##################################################################3"
 )
-console.log(path)
+console.log( 'hi')
 const BlogPostForm = {
   /**
    * The list of fields tell us what the form looks like.

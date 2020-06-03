@@ -13,6 +13,7 @@ import Arrow from "../../content/assets/next.svg"
 import Two from "../../content/assets/two.svg"
 import Title from "../components/seo"
 
+
 class Landing extends React.Component {
   render() {
     const { data } = this.props
@@ -168,7 +169,7 @@ class Landing extends React.Component {
             </div>
             <div className={Sect.flex4}>
               <div>One</div>
-              <div>Two</div>
+              <div>Two5</div>
               <div>Three</div>
               <div>Four</div>
             </div>
